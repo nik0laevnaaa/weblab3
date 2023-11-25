@@ -1,0 +1,199 @@
+:root {
+    font-family: 62.5%;
+    --footer-color: #383638;
+    --main-color: #E2E2E2;
+    --logo-color: #1D1D1D;
+    --pic-group-and-quote-background-color: #0B0F15;
+}
+
+body {
+    background-color: black;
+    color: var(--main-color);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+footer {
+    font-size: 1.6rem;
+    line-height: 130%;
+    background-color: var(--footer-color);
+    text-align: left;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h2,
+.quote#q2 #name-q2 {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+button {
+    background-color: black;
+    color: var(--main-color);
+}
+
+#opening-text,
+#opening-text+p,
+#pic-inscription,
+.quote#q1 blockquote {
+    font-family: 'Nunito', sans-serif;
+}
+
+.logo-1string,
+button,
+.title,
+.pic-and-text,
+#pic-inscription,
+.footer-title,
+#action,
+#teammate,
+#particulars,
+#portfolio {
+    font-weight: 700;
+}
+
+.title,
+.pic-and-text#p2 {
+    font-size: 2.4rem;
+}
+
+#opening-text {
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
+.logo-2string#l1,
+#action,
+#pic-inscription p+p,
+#teammate,
+button {
+    font-size: 1.2rem;
+}
+
+#pic-inscription img+p {
+    font-size: .6rem;
+}
+
+.quote#q1 #name-q1 {
+    font-size: .5rem;
+    font-weight: 600;
+}
+
+.quote#q1 #company {
+    font-size: .3rem;
+    font-weight: 600;
+}
+
+.quote#q1 blockquote {
+    font-size: .5rem;
+}
+
+.pic-and-text#p1,
+#portfolio,
+.logo-2string#l2 {
+    font-size: 1.6rem;
+}
+
+.quote#q2 #name-q2,
+.footer-title {
+    font-size: 1.8rem;
+}
+
+.quote#q2 #position {
+    font-size: 1.1rem;
+}
+
+.logo-1string#l2 {
+    font-size: 2rem;
+}
+
+#copyright {
+    font-size: 1.4rem;
+    line-height: normal;
+    text-align: center;
+}
+
+#opening-text+p,
+.title+p,
+#portfolio,
+.quote#q2 blockquote,
+.logo-1string#l2 {
+    line-height: 2.4rem;
+}
+
+#action,
+button,
+#teammate,
+.pic-and-text#p1 {
+    line-height: 1.8rem;
+}
+
+.pic-and-text#p2 {
+    line-height: 100%;
+}
+
+#action,
+#teammate {
+    background-color: var(--main-color);
+    border-radius: 2.4rem;
+    color: black;
+    padding: 1rem 3.5rem;
+}
+
+.logo-1string#l2,
+.logo-2string#l2 {
+    color: var(--logo-color);
+}
+
+.pic-and-text#p1 div,
+.quote#q2 {
+    background-color: var(--pic-group-and-quote-background-color);
+}
+
+blockquote,
+.teammate-text {
+    text-align: left;
+}
+
+.photo {
+    border-radius: 1.2rem;
+}
+
+#video,
+#portfolio {
+    padding: 1rem 3.5rem;
+    border-radius: 2.4rem;
+    border: .07rem solid #E2E2E2;
+}
+
+.pic-and-text#p1 div {
+    border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.pic-and-text#p1 div,
+.pic-and-text#p2 img {
+    border-radius: 3rem;
+}
+
+#portfolio {
+    border: .1rem solid #E2E2E2;
+}
+
+.quote#q2 {
+    border-radius: 2rem;
+}
+
+#logo2 {
+    background-color: var(--main-color);
+    border-radius: 2rem;
+}
