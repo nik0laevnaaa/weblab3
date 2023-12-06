@@ -1,12 +1,17 @@
 :root {
-    font-family: 62.5%;
     --footer-color: #383638;
     --main-color: #E2E2E2;
+    --bckg-color: black;
     --logo-color: #1D1D1D;
-    --pic-group-and-quote-background-color: #0B0F15;
+    --quote-color: #0B0F15;
+    --pic-group-color: #0B0F15;
+    --pic-group-border-color: rgba(255, 255, 255, 0.10);
+    --button-color: black;
+    --shadow: rgba(55, 125, 255, 0.50);
 }
 
 html {
+    font-size: 62.5%;
     box-sizing: border-box;
 }
 
@@ -17,20 +22,31 @@ html {
 }
 
 body {
-    background-color: black;
+    background-color: var(--bckg-color);
     color: var(--main-color);
     font-family: 'Quicksand', sans-serif;
     font-size: 1.4rem;
     font-weight: 400;
     line-height: normal;
     margin: 0;
+}
+
+main {
     text-align: center;
 }
 
-header {
-    margin: 40px 25px 69px;
-    min-width: 340px;
-    padding: 33px 340px;
+.wrapper {
+    max-width: 390px;
+    min-width: 355px;
+}
+
+.nav {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 220px;
+    margin-top: 40px;
+    margin-bottom: 69px;
 }
 
 footer {
@@ -38,7 +54,10 @@ footer {
     font-size: 1.6rem;
     line-height: 130%;
     text-align: left;
-    min-width: 390px;
+}
+
+section {
+    margin: 0;
 }
 
 h1 {
@@ -46,7 +65,7 @@ h1 {
 }
 
 h1,
-.quote#q2 #name-q2 {
+.testimonial .name {
     font-weight: 600;
 }
 
@@ -56,138 +75,161 @@ a {
 }
 
 button {
-    background-color: black;
+    background-color: var(--bckg-color);
 }
 
-#video {
+.video {
     color: var(--main-color);
 }
 
-#opening-text,
-#opening-text+p,
-#pic-inscription,
-.quote#q1 blockquote {
+.action h1,
+.action p,
+.count,
+.recommendation blockquote {
     font-family: 'Nunito', sans-serif;
 }
 
-.logo-1string,
-#video,
-.title,
+#str-1,
+.video,
+.title p,
 .pic-and-text,
-#pic-inscription,
+.rating,
 .footer-title,
-#action,
-#teammate,
-#particulars,
-#portfolio {
+.action a,
+.links,
+.services a,
+.portfolio a {
     font-weight: 700;
 }
 
-.title,
-.pic-and-text#p2 {
+.title p,
+.portfolio .pic-and-text {
     font-size: 2.4rem;
 }
 
-#opening-text {
+.action h1 {
     font-size: 2.8rem;
     font-weight: 800;
-    width: 328px;
+    letter-spacing: 0.28px;
+    margin: 0 27.8px 0 34.2px;
 }
 
-.logo-2string#l1,
-#action,
-#pic-inscription p+p,
-#teammate,
-#video {
+.logo-1#str-2,
+.action a,
+.count,
+.links,
+.video {
     font-size: 1.2rem;
 }
 
-#pic-inscription img+p {
+.assessment {
     font-size: .6rem;
+    letter-spacing: 0.06px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    width: 48px;
+    margin: 0;
+    position: absolute;
+    top: 14px;
+    right: 19px;
+    bottom: 31px;
+    left: 32px;
 }
 
-.quote#q1 #name-q1 {
+.recommendation .name {
     font-size: .5rem;
     font-weight: 600;
+    letter-spacing: 0.05px;
+    margin: 0;
 }
 
-.quote#q1 #company {
+.quote .company {
     font-size: .3rem;
     font-weight: 600;
+    letter-spacing: 0.03px;
+    opacity: 0.5;
+    margin: 0;
 }
 
-.quote#q1 blockquote {
+.recommendation blockquote {
     font-size: .5rem;
+    letter-spacing: 0.05px;
+    width: 60.241px;
+    margin: 0;
+    position: absolute;
+    top: 34.22px;
+    left: 10.12px;
 }
 
-.pic-and-text#p1,
-#portfolio,
-.logo-2string#l2 {
+.recommendation blockquote p {
+    margin: 0;
+}
+
+.services .pic-and-text,
+.portfolio a,
+.logo-2#str-2 {
     font-size: 1.6rem;
 }
 
-.quote#q2 #name-q2,
+.testimonial .name,
 .footer-title {
     font-size: 1.8rem;
 }
 
-.quote#q2 #position {
+.position {
     font-size: 1.1rem;
 }
 
-.logo-1string#l2 {
+.logo-2#str-1 {
     font-size: 2rem;
-    width: 72px;
 }
 
-#copyright {
+.copyright {
     font-size: 1.4rem;
     line-height: normal;
-    margin: 0;
     text-align: center;
-    border-top: 1px solid var(--main-color);
-    width: 352px;
+    margin-bottom: 0;
 }
 
-#opening-text+p,
+.action p,
+.text,
 .title+p,
-#portfolio,
-.quote#q2 blockquote,
-.logo-1string#l2 {
-    line-height: 2.4rem;
+.portfolio a,
+.testimonial blockquote,
+.logo-2#str-1 {
+    line-height: 24px;
 }
 
-#action,
-#video,
-#teammate,
-.pic-and-text#p1 {
-    line-height: 1.8rem;
+.action a,
+.video,
+.links,
+.services .pic-and-text {
+    line-height: 18px;
 }
 
-.pic-and-text#p2 {
+.portfolio .pic-and-text {
     line-height: 100%;
 }
 
-#action,
-#teammate {
+.action a,
+.links a {
     background-color: var(--main-color);
     border-radius: 24px;
-    color: black;
+    color: var(--button-color);
     padding: 10px 35px;
 }
 
-.logo-1string#l2,
-.logo-2string#l2 {
+.logo-2 {
     color: var(--logo-color);
 }
 
-.pic-and-text#p1 div,
-.quote#q2 {
-    background-color: var(--pic-group-and-quote-background-color);
+.services .pic-and-text>div,
+.testimonial .quote {
+    background-color: var(--pic-group-color);
 }
 
 blockquote,
-.teammate-text {
+.text {
     text-align: left;
 }
 
@@ -195,51 +237,34 @@ blockquote,
     border-radius: 12px;
 }
 
-#video,
-#portfolio {
+.video,
+.portfolio a {
     border-radius: 24px;
-    border: 0.7px solid #E2E2E2;
+    border: 0.7px solid var(--main-color);
     padding: 10px 35px;
-    background-color: black;
+    background-color: var(--bckg-color);
 }
 
-.pic-and-text#p1 div {
-    border: 1px solid rgba(255, 255, 255, 0.10);
-    width: 262px;
-    height: 269px;
+.services .pic-and-text>div {
+    border: 1px solid var(--pic-group-border-color);
 }
 
-.pic-and-text#p1 div,
-.pic-and-text#p2 img {
+.services .pic-and-text>div,
+.portfolio .pic-and-text img {
     border-radius: 30px;
 }
 
-#portfolio {
-    border: 1px solid #E2E2E2;
+.portfolio a {
+    border: 1px solid var(--main-color);
 }
 
-.quote#q2 {
-    width: 340px;
-    height: 257px;
+.testimonial .quote {
     border-radius: 20px;
 }
 
-#logo2 {
-    width: 187px;
-    height: 88px;
+.logo2 {
     background-color: var(--main-color);
     border-radius: 20px;
-}
-
-section#s1 {
-    min-width: 355px;
-}
-
-section#s2,
-section#s3,
-section#s4,
-section#s5 {
-    min-width: 340px;
 }
 
 header button img {
@@ -248,235 +273,168 @@ header button img {
 }
 
 header button {
-    width: 29px;
-    height: 25px;
     padding: 0;
     border: 0;
 }
 
-header a {
-    padding: 33px 91px;
-}
-
-header a img {
+.nav div img {
     width: 32.001px;
     height: 29.99px;
 }
 
-.logo-1string#l1 {
-    width: 51px;
+header p {
+    margin: 0;
 }
 
-.logo-2string#l1 {
-    width: 47px;
+header a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-#opening-text+p,
-.teammate-text,
-#s3 .title,
-#s4 .title,
-#s5 .title {
-    width: 340px;
+.nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
 
-#s1 .photo {
-    width: 330px;
-    height: 224px;
-}
-
-.ellipse,
-#s1 #star,
-#video>img {
+.ellipse-right,
+.ellipse-left,
+.star {
     width: 16px;
     height: 16px;
+    flex-shrink: 0;
 }
 
-#s1 #rectangle {
+.ellipse-right {
+    position: absolute;
+    top: -11px;
+    right: -6.52px;
+}
+
+.ellipse-left {
+    position: absolute;
+    top: 212px;
+    left: -7.93px;
+}
+
+.action p {
+    letter-spacing: 0.14px;
+    opacity: 0.6;
+    width: 340px;
+    margin: 0 21.8px 0 28.2px;
+}
+
+.action a {
+    letter-spacing: 0.12px;
+    box-shadow: 0px 4px 8px 0px var(--shadow);
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.star {
+    position: absolute;
+    top: 8px;
+    right: 70px;
+    bottom: 29px;
+    left: 13px;
+}
+
+.count {
+    margin: 0;
+    position: absolute;
+    top: 28px;
+    right: 21px;
+    bottom: 9px;
+    left: 16px;
+}
+
+.rating {
+    border-radius: 6px;
+    background-color: var(--bckg-color);
     width: 99px;
     height: 53px;
-    border-radius: 6px;
+    flex-shrink: 0;
+    position: absolute;
+    top: -3px;
+    left: 0.07px;
 }
 
-#s1 #square {
+.right-corner {
+    width: 98.475px;
+    height: 70.926px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.recommendation .photo {
+    width: 330px;
+    height: 224px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 12px;
+    right: 15.48px;
+    bottom: 15.23px;
+    left: 9.07px;
+}
+
+.Bill-Adams {
+    width: 15.422px;
+    height: 15.422px;
+    flex-shrink: 0;
+    border-radius: 15.422px;
+    position: absolute;
+    top: 13.01px;
+    left: 10.12px;
+}
+
+.author {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.964px;
+    position: absolute;
+    top: 14.94px;
+    left: 30.36px;
+}
+
+.square {
     width: 80px;
     height: 80px;
     border-radius: 6px;
 }
 
-#s1 #Bill-Adams {
-    width: 15.422px;
-    height: 15.422px;
-    border-radius: 15.422px;
+.recommendation .quote {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    position: absolute;
+    right: 4.48px;
+    bottom: -5.77px;
 }
 
-#s1 blockquote {
-    width: 60.241px;
+.recommendation {
+    width: 354.55px;
+    height: 251.23px;
+    position: relative;
 }
 
-#s1 #right-corner,
-#s1 #left-corner {
-    width: 98.475px;
-    height: 70.926px;
+.intro .wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 99px;
 }
 
-#s2>h1 {
-    width: 62px;
-}
-
-#s2 .title {
-    width: 166px;
-}
-
-#s2 #points {
-    width: 340px;
-    height: 258px;
-}
-
-#s2 .photo {
-    width: 340px;
-    height: 242px;
-}
-
-#s3 h1 {
-    width: 86px;
-}
-
-#s3 .title+p {
-    width: 340px;
-}
-
-#s3 #particulars {
-    width: 77px;
-    height: 18px;
-}
-
-#s3 #arrow {
-    width: 20px;
-    height: 24px;
-}
-
-#s3 .circle {
-    width: 100px;
-    height: 100px;
-}
-
-#s3 .icon {
-    width: 42px;
-    height: 42px;
-}
-
-#s3 #group-1 p {
-    width: 104px;
-}
-
-#s3 #group-2 p {
-    width: 112px;
-}
-
-#s3 #group-3 p {
-    width: 54px;
-}
-
-#s3 #group-4 p {
-    width: 29px;
-}
-
-#s4 h1 {
-    width: 88px;
-}
-
-#s4 .title+p {
-    width: 340px;
-}
-
-#s4 #couple-1 img {
-    width: 300px;
-    height: 300px;
-}
-
-#s4 #couple-2 img {
-    width: 340px;
-    height: 338px;
-}
-
-#s4 #couple-3 img {
-    width: 300px;
-    height: 301.765px;
-}
-
-#s4 #couple-1 p {
-    width: 245px;
-}
-
-#s4 #couple-2 p {
-    width: 125.3px;
-}
-
-#s4 #couple-3 p {
-    width: 192px;
-}
-
-#s5 h1 {
-    width: 78px;
-}
-
-#s5 img {
-    width: 70px;
-    height: 70px;
-    border-radius: 70px;
-}
-
-#s5 #name-q2 {
-    width: 98px;
-}
-
-#s5 #position {
-    width: 93px;
-}
-
-#s5 blockquote p {
-    width: 280px;
-}
-
-#logo2 img {
-    width: 53.229px;
-    height: 50.01px;
-}
-
-.logo-2string#l2 {
-    width: 63px;
-}
-
-#terms-and-policies {
-    width: 141px;
-    height: 112px;
-}
-
-#company {
-    width: 83px;
-    height: 152px;
-}
-
-#contact {
-    width: 162px;
-    height: 106px;
-}
-
-#location {
-    width: 253px;
-    height: 193px;
-}
-
-#social-network  a>img{
-    width: 36px;
-    height: 36px;
-}
-
-#facebook,
-#instagram,
-#linkedin,
-#mail,
-#twitter {
-    width: 21.6px;
-    height: 21.6px;
+.intro {
+    position: relative;
 }
